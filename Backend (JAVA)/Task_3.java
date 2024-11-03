@@ -7,7 +7,7 @@ and dateOfJoining (Date). Use this Employee object with the previously implement
 
 import java.util.Date;
 
-public class MyList<T> {
+ class MyList<T> {
     private T[] array;
     private int size;
 
@@ -74,7 +74,29 @@ public class MyList<T> {
     public int getSize() {
         return size;
     }
+}
+class Employee {
+    private String id;
+    private String name;
+    private int age;
+    private Date dateOfJoining;
 
+     Employee(String id, String name, int age, Date dateOfJoining) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.dateOfJoining = dateOfJoining;
+    }
+
+     void displayDetails() {
+        System.out.println("Employee ID: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Date of Joining: " + dateOfJoining);
+        System.out.println();
+    }
+}
+public class Main{
     public static void main(String[] args) {
      
         MyList<Employee> employeeList = new MyList<>();
@@ -97,24 +119,3 @@ public class MyList<T> {
     }
 }
 
-class Employee {
-    private String id;
-    private String name;
-    private int age;
-    private Date dateOfJoining;
-
-     Employee(String id, String name, int age, Date dateOfJoining) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.dateOfJoining = dateOfJoining;
-    }
-
-     void displayDetails() {
-        System.out.println("Employee ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Date of Joining: " + dateOfJoining);
-        System.out.println();
-    }
-}
