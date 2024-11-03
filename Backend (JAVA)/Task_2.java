@@ -7,23 +7,23 @@ Integer, String, and custom classes. Use the same structure as the previous clas
 
 //Solution:
 
-public class MyList<T> {
+ class MyList<T> {
     private T[] array;
     private int size;
 
-     MyList() {
+    MyList() {
         array = (T[]) new Object[100];
         size = 0;
     }
 
-     void add(T value) {
+    void add(T value) {
         if (size == array.length) {
             growArray();
         }
         array[size++] = value;
     }
 
-     void deleteByIndex(int index) {
+    void deleteByIndex(int index) {
         if (index < 0 || index >= size) {
             System.out.println("Index out of range");
             return;
@@ -31,13 +31,13 @@ public class MyList<T> {
         for (int i = index; i < size - 1; i++) {
             array[i] = array[i + 1];
         }
-        array[--size] = null; 
+        array[--size] = null;
         if (size <= array.length / 4 && array.length > 100) {
             shrinkArray();
         }
     }
 
-     boolean deleteByValue(T value) {
+    boolean deleteByValue(T value) {
         for (int i = 0; i < size; i++) {
             if (array[i].equals(value)) {
                 deleteByIndex(i);
@@ -47,7 +47,7 @@ public class MyList<T> {
         return false;
     }
 
-     T get(int index) {
+    T get(int index) {
         if (index < 0 || index >= size) {
             System.out.println("Index out of range");
             return null;
@@ -55,26 +55,27 @@ public class MyList<T> {
         return array[index];
     }
 
-     void growArray() {
+    void growArray() {
         int newCapacity = array.length * 2;
         T[] newArray = (T[]) new Object[newCapacity];
         System.arraycopy(array, 0, newArray, 0, array.length);
         array = newArray;
     }
 
-     void shrinkArray() {
+    void shrinkArray() {
         int newCapacity = array.length / 2;
         T[] newArray = (T[]) new Object[newCapacity];
         System.arraycopy(array, 0, newArray, 0, size);
         array = newArray;
     }
 
-     int getSize() {
+    int getSize() {
         return size;
     }
+}
 
+public class Main {
     public static void main(String[] args) {
-        
         // Operations with Integer
         MyList<Integer> intList = new MyList<>();
         System.out.println("Adding integer values:");
@@ -98,3 +99,4 @@ public class MyList<T> {
         System.out.println("Current size of string list: " + strList.getSize());
     }
 }
+
