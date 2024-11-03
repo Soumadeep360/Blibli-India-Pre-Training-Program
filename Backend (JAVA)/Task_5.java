@@ -1,3 +1,12 @@
+/*
+Create a class named Bank and other classes such as ICICI and HDFC. 
+The Bank class should have default transaction charges, which will serve as the base. 
+Based on these default charges, the ICICI and HDFC classes will calculate their specific transaction charges. 
+Ensure that proper access specifiers are used throughout the code.
+*/
+
+//Solution:
+
 class Bank {
     protected double transactionCharges = 100.0;
 
