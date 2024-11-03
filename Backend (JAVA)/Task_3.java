@@ -102,8 +102,8 @@ public class Main{
         MyList<Employee> employeeList = new MyList<>();
 
         employeeList.add(new Employee("E001", "John Doe", 30, new Date()));
-        employeeList.add(new Employee("E002", "Jane Smith", 28, new Date()));
-        employeeList.add(new Employee("E003", "Alice Brown", 35, new Date()));
+        employeeList.add(new Employee("E002", "Ravi Gupta", 28, new Date()));
+        employeeList.add(new Employee("E003", "Rahul Kumar", 35, new Date()));
 
         System.out.println("Employees in the list:");
         for (int i = 0; i < employeeList.getSize(); i++) {
