@@ -6,23 +6,23 @@ The array should dynamically grow, similar to an ArrayList, when more data is ad
 */
 
 //Solution:
-public class MyList {
+class MyList {
     private int[] array;
     private int size;
 
-        MyList() {
+    MyList() {
         array = new int[100];
         size = 0;
     }
 
-     void add(int value) {
+    void add(int value) {
         if (size == array.length) {
             growArray();
         }
         array[size++] = value;
     }
 
-     void deleteByIndex(int index) {
+    void deleteByIndex(int index) {
         if (index < 0 || index >= size) {
             System.out.println("Index out of range");
             return;
@@ -36,7 +36,7 @@ public class MyList {
         }
     }
 
-     boolean deleteByValue(int value) {
+    boolean deleteByValue(int value) {
         for (int i = 0; i < size; i++) {
             if (array[i] == value) {
                 deleteByIndex(i);
@@ -46,7 +46,7 @@ public class MyList {
         return false;
     }
 
-     int get(int index) {
+    int get(int index) {
         if (index < 0 || index >= size) {
             System.out.println("Index out of range");
             return -1; 
@@ -54,24 +54,26 @@ public class MyList {
         return array[index];
     }
 
-     void growArray() {
+    void growArray() {
         int newCapacity = array.length * 2;
         int[] newArray = new int[newCapacity];
         System.arraycopy(array, 0, newArray, 0, array.length);
         array = newArray;
     }
 
-     void shrinkArray() {
+    void shrinkArray() {
         int newCapacity = array.length / 2;
         int[] newArray = new int[newCapacity];
         System.arraycopy(array, 0, newArray, 0, size);
         array = newArray;
     }
 
-     int getSize() {
+    int getSize() {
         return size;
     }
+}
 
+public class Main {
     public static void main(String[] args) {
         MyList myList = new MyList();
 
