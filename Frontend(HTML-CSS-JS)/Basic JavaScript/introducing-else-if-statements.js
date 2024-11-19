@@ -7,7 +7,7 @@ function testElseIf(val) {
     return "Smaller than 5";
   }
 
-  else{
+  else {
     return "Between 5 and 10";
   }
 }

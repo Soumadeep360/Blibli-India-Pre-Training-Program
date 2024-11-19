@@ -1,10 +1,10 @@
 function checkObj(obj, checkProp) {
   // Only change code below this line
-  if (obj.hasOwnProperty(checkProp)){
+  if (obj.hasOwnProperty(checkProp)) {
     return obj[checkProp];
   }
 
-  else{
+  else {
     return "Not Found";
   }
   // Only change code above this line

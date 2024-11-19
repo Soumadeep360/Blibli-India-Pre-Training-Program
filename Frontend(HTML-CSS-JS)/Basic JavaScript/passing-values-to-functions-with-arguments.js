@@ -1,4 +1,4 @@
-function functionWithArgs(one, two){
+function functionWithArgs(one, two) {
   console.log(one + two);
 }
 

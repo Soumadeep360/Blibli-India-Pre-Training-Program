@@ -21,20 +21,20 @@ const recordCollection = {
 
 // Only change code below this line
 function updateRecords(records, id, prop, value) {
-  if (prop != "tracks" && value != ""){
+  if (prop != "tracks" && value != "") {
     records[id][prop] = value;
   }
 
-  else if (prop === "tracks" && records[id].hasOwnProperty("tracks") == false){
+  else if (prop === "tracks" && records[id].hasOwnProperty("tracks") == false) {
     records[id].tracks = [];
     records[id].tracks.push(value);
   }
 
-  else if (prop === "tracks" && value != ""){
+  else if (prop === "tracks" && value != "") {
     records[id].tracks.push(value);
   }
 
-  else if (value === ""){
+  else if (value === "") {
     delete records[id][prop];
   }
 

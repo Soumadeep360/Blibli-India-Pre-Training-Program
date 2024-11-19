@@ -1,7 +1,7 @@
 function multiplyAll(arr) {
   let ans = 1;
-  for (let i = 0; i < arr.length; i ++){
-    for (let j = 0; j < arr[i].length; j ++){
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
       ans *= arr[i][j];
     }
   }

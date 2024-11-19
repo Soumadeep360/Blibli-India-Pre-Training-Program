@@ -12,4 +12,4 @@ const myMusic = [
   }
 ];
 
-myMusic.push({"artist": "Linkin Park", "title": "Pushing Me Away", "release_year": 2000, "formats": ["CD", "BluRay"]});
+myMusic.push({ "artist": "Linkin Park", "title": "Pushing Me Away", "release_year": 2000, "formats": ["CD", "BluRay"] });

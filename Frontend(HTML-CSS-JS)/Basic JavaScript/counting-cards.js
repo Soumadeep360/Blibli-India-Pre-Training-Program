@@ -1,7 +1,7 @@
 let count = 0;
 
 function cc(card) {
-  switch(card){
+  switch (card) {
     case 2:
     case 3:
     case 4:
@@ -19,11 +19,11 @@ function cc(card) {
       break;
   }
 
-  if (count > 0){
+  if (count > 0) {
     return count + " Bet";
   }
 
-  else{
+  else {
     return count + " Hold";
   }
 }

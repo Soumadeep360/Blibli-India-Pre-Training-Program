@@ -1,3 +1,3 @@
-function timesFive(num){
+function timesFive(num) {
   return num * 5;
 }

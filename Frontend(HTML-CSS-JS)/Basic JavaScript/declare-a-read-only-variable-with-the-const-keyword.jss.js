@@ -1,6 +1,6 @@
-const FCC = "freeCodeCamp"; 
+const FCC = "freeCodeCamp";
 
-let fact = "is cool!"; 
+let fact = "is cool!";
 fact = "is awesome!";
 
 console.log(FCC, fact); 

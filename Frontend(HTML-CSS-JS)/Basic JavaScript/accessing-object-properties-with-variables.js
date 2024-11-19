@@ -6,5 +6,5 @@ const testObj = {
 };
 
 // Only change code below this line
-const playerNumber = 16;  
+const playerNumber = 16;
 let player = testObj[playerNumber]; 

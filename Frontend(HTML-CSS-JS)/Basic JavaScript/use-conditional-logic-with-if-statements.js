@@ -1,10 +1,10 @@
 function trueOrFalse(wasThatTrue) {
   // Only change code below this line
-  if (wasThatTrue){
+  if (wasThatTrue) {
     return "Yes, that was true";
   }
 
-  else{
+  else {
     return "No, that was false";
   }
 

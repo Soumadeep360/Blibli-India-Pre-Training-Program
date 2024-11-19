@@ -1,6 +1,6 @@
 function chainToSwitch(val) {
   let answer = "";
-  switch(val){
+  switch (val) {
     case "bob":
       answer = "Marley";
       break;

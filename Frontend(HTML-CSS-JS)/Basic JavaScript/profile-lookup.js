@@ -27,13 +27,12 @@ const contacts = [
 ];
 
 function lookUpProfile(name, prop) {
-  // Only change code below this line
   let isActualFirstName = false;
   let isProperty = false;
   let temp = 0;
 
-  for (let i = 0; i < contacts.length; i++){
-    if (name == contacts[i].firstName){
+  for (let i = 0; i < contacts.length; i++) {
+    if (name == contacts[i].firstName) {
       isActualFirstName = true;
       isProperty = contacts[i].hasOwnProperty(prop);
       temp = i;
@@ -41,20 +40,18 @@ function lookUpProfile(name, prop) {
     }
   }
 
-  if (isActualFirstName === true && isProperty === true){
+  if (isActualFirstName === true && isProperty === true) {
     return contacts[temp][prop];
   }
 
-  else if (isActualFirstName === false){
+  else if (isActualFirstName === false) {
     return "No such contact";
   }
 
-  else if (isActualFirstName === true && isProperty === false){
+  else if (isActualFirstName === true && isProperty === false) {
     return "No such property";
   }
 
-
-  // Only change code above this line
 }
 
 lookUpProfile("Akira", "likes");

@@ -1,14 +1,14 @@
 function sum(arr, n) {
   // Only change code below this line
-  if (n == 0){
+  if (n == 0) {
     return 0;
   }
-  
-  else if (n === 1){
+
+  else if (n === 1) {
     return arr[0];
   }
 
-  else{
+  else {
     return arr[n - 1] + sum(arr, n - 1);
   }
 
