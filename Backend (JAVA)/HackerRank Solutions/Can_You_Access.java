@@ -15,7 +15,7 @@ public class Solution {
 
         Inner inner = new Inner();
         Inner.Private innerPrivate = inner.new Private();
-        
+
         System.out.println(innerPrivate.powerof2(num));
         System.out.println("An instance of class: " + innerPrivate.getClass().getCanonicalName() + " has been created");
     }
