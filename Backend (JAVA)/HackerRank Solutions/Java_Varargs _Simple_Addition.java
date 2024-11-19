@@ -31,10 +31,10 @@ public class Solution {
         int num6 = scanner.nextInt();
 
         Add obj = new Add();
-        
-        obj.add(num1, num2);               
+
+        obj.add(num1, num2);
         obj.add(num1, num2, num3);
-        obj.add(num1, num2, num3, num4, num5); 
+        obj.add(num1, num2, num3, num4, num5);
         obj.add(num1, num2, num3, num4, num5, num6);
 
     }

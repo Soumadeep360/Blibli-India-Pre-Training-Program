@@ -15,8 +15,8 @@ class InvalidNumberException extends Exception {
 
 public class NumberCheck {
     public static void main(String[] args) {
-      Scanner sc=new Scanner(System.in);
-      int number =sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
         try {
             checkSingleDigit(number);
         } catch (InvalidNumberException e) {

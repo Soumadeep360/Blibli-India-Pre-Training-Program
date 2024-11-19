@@ -31,20 +31,20 @@ public class Solution {
         int n = scanner.nextInt();
 
         List<Student> students = new ArrayList<>();
-        
+
         for (int i = 0; i < n; i++) {
             int id = scanner.nextInt();
             String name = scanner.next();
             double cgpa = scanner.nextDouble();
             students.add(new Student(id, name, cgpa));
         }
-        
+
         Collections.sort(students, new StudentComparator());
-        
+
         for (Student student : students) {
             System.out.println(student.name);
         }
-        
+
         scanner.close();
     }
 }

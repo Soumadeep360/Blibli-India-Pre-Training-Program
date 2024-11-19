@@ -24,7 +24,7 @@ public class Main {
                 long result = myCalculator.power(n, p);
                 System.out.println(result);
             } catch (Exception e) {
-                System.out.println("java.lang.Exception: "+e.getMessage());
+                System.out.println("java.lang.Exception: " + e.getMessage());
             }
         }
         scanner.close();

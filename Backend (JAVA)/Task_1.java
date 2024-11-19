@@ -49,7 +49,7 @@ class MyList {
     int get(int index) {
         if (index < 0 || index >= size) {
             System.out.println("Index out of range");
-            return -1; 
+            return -1;
         }
         return array[index];
     }
@@ -73,7 +73,7 @@ class MyList {
     }
 }
 
-public class Main {
+public class Solution {
     public static void main(String[] args) {
         MyList myList = new MyList();
 

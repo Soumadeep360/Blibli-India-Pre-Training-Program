@@ -1,9 +1,14 @@
-import java.io.*; 
+import java.io.*;
 import java.util.*;
 
-class Student {}
-class Rockstar {}
-class Hacker {}
+class Student {
+}
+
+class Rockstar {
+}
+
+class Hacker {
+}
 
 public class Solution {
 

@@ -10,18 +10,15 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-
-
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         String n = bufferedReader.readLine();
-        BigInteger bign=new BigInteger(n);
-        if(bign.isProbablePrime(20)){
+        BigInteger bign = new BigInteger(n);
+        if (bign.isProbablePrime(20)) {
             System.out.println("prime");
-        }
-        else{
+        } else {
             System.out.println("not prime");
         }
         bufferedReader.close();

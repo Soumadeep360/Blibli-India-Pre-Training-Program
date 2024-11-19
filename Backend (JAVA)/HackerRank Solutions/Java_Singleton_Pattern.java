@@ -5,13 +5,16 @@ import java.math.*;
 import java.util.regex.*;
 import java.lang.reflect.*;
 
-
-class Singleton{
+class Singleton {
     private static Singleton instance = null;
-    private Singleton(){};
+
+    private Singleton() {
+    };
+
     public String str;
-    public static Singleton getSingleInstance(){
-        if (instance == null){
+
+    public static Singleton getSingleInstance() {
+        if (instance == null) {
             instance = new Singleton();
             return instance;
         }

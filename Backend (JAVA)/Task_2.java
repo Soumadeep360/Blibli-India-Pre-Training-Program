@@ -7,7 +7,7 @@ Integer, String, and custom classes. Use the same structure as the previous clas
 
 //Solution:
 
- class MyList<T> {
+class MyList<T> {
     private T[] array;
     private int size;
 
@@ -74,7 +74,7 @@ Integer, String, and custom classes. Use the same structure as the previous clas
     }
 }
 
-public class Main {
+public class Solution {
     public static void main(String[] args) {
         // Operations with Integer
         MyList<Integer> intList = new MyList<>();
@@ -99,4 +99,3 @@ public class Main {
         System.out.println("Current size of string list: " + strList.getSize());
     }
 }
-

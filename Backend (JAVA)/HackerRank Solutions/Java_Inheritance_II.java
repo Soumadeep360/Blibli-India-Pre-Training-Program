@@ -12,7 +12,7 @@ public class Solution {
     public static void main(String[] args) {
         Adder adder = new Adder();
         System.out.println("My superclass is: " + Arithmetic.class.getSimpleName());
-        
-        System.out.print(adder.add(42, 0)+" "+adder.add(13, 0)+" "+adder.add(20, 0));
+
+        System.out.print(adder.add(42, 0) + " " + adder.add(13, 0) + " " + adder.add(20, 0));
     }
 }
