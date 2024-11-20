@@ -2,5 +2,5 @@
 var a;
 a = 7;
 var b;
-b=a;
+b = a;
 // Only change code below this line
