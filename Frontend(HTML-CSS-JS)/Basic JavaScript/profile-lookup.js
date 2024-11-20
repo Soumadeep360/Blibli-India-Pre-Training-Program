@@ -42,16 +42,11 @@ function lookUpProfile(name, prop) {
 
   if (isActualFirstName === true && isProperty === true) {
     return contacts[temp][prop];
-  }
-
-  else if (isActualFirstName === false) {
+  } else if (isActualFirstName === false) {
     return "No such contact";
-  }
-
-  else if (isActualFirstName === true && isProperty === false) {
+  } else if (isActualFirstName === true && isProperty === false) {
     return "No such property";
   }
-
 }
 
 lookUpProfile("Akira", "likes");
