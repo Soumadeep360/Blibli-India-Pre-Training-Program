@@ -15,7 +15,7 @@ class Add {
         }
 
         exp.append("=").append(sum);
-        System.out.println(exp.toString());
+        System.out.println(exp);
     }
 }
 

@@ -12,7 +12,6 @@ class Solution {
             mp.put(name, phone);
             in.nextLine();
         }
-
         while (in.hasNext()) {
             String s = in.nextLine();
             if (mp.containsKey(s)) {

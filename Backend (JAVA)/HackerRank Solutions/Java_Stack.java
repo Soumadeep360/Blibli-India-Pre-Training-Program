@@ -1,8 +1,8 @@
 import java.util.*;
 
 class Solution {
-    private static String open = "{[(";
-    private static String close = "}])";
+    private static final String open = "{[(";
+    private static final String close = "}])";
 
     static boolean isValid(String str) {
         Stack<Character> st = new Stack<>();

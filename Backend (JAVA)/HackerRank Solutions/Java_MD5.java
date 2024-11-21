@@ -26,9 +26,7 @@ public class Solution {
             }
 
             System.out.println(hashtext);
-        }
-
-        catch (Exception e) {
+        } catch (Exception e) {
             throw new Exception(e);
         }
 

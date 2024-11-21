@@ -5,6 +5,7 @@ public class Solution {
     static int B;
     static int H;
     static boolean flag = true;
+
     static {
         Scanner scanner = new Scanner(System.in);
 

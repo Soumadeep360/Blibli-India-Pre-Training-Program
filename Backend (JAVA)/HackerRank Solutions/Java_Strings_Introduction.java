@@ -21,6 +21,5 @@ public class Solution {
         h = Character.toUpperCase(h);
 
         System.out.println(ch + A.substring(1) + " " + h + B.substring(1));
-        ;
     }
 }

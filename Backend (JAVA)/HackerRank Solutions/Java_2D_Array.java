@@ -7,13 +7,14 @@ import java.util.concurrent.*;
 import java.util.function.*;
 import java.util.regex.*;
 import java.util.stream.*;
+
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        int a[][] = new int[6][6];
+        int[][] a = new int[6][6];
         int maxi = Integer.MIN_VALUE;
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {

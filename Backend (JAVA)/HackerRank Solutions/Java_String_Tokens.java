@@ -8,7 +8,7 @@ public class Solution {
         String s = scan.nextLine();
 
         s = s.trim();
-        String token[] = s.split("[ !,?._'@]+");
+        String[] token = s.split("[ !,?._'@]+");
 
         if (s.length() == 0) {
             System.out.println(0);

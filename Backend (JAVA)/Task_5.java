@@ -16,7 +16,7 @@ class Bank {
 }
 
 class ICICI extends Bank {
-    private double additionalCharge = 20.0;
+    private final double additionalCharge = 20.0;
 
     public double getTransactionCharges() {
         return transactionCharges + additionalCharge;
@@ -24,7 +24,7 @@ class ICICI extends Bank {
 }
 
 class HDFC extends Bank {
-    private double additionalCharge = 35.0;
+    private final double additionalCharge = 35.0;
 
     public double getTransactionCharges() {
         return transactionCharges + additionalCharge;

@@ -7,11 +7,10 @@ import java.lang.reflect.*;
 
 class Singleton {
     private static Singleton instance = null;
+    public String str;
 
     private Singleton() {
-    };
-
-    public String str;
+    }
 
     public static Singleton getSingleInstance() {
         if (instance == null) {

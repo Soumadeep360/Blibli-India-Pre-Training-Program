@@ -75,10 +75,10 @@ class MyList<T> {
 }
 
 class Employee {
-    private String id;
-    private String name;
-    private int age;
-    private Date dateOfJoining;
+    private final String id;
+    private final String name;
+    private final int age;
+    private final Date dateOfJoining;
 
     Employee(String id, String name, int age, Date dateOfJoining) {
         this.id = id;

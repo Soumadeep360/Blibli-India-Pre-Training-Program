@@ -13,7 +13,7 @@ public class Solution {
         if (n != m)
             return false;
 
-        int freq[] = new int[26];
+        int[] freq = new int[26];
         for (int i = 0; i < n; i++) {
             freq[a.charAt(i) - 'a']++;
             freq[b.charAt(i) - 'a']--;
