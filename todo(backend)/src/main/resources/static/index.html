@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-image">
+      <div
+        class="container d-flex justify-content-center align-items-center vh-100"
+      >
+        <div class="todo-container p-4 rounded shadow bg-light">
+          <h2 class="text-center text-primary mb-4">Todo List</h2>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              id="todo-input"
+              class="form-control"
+              placeholder="Add your todo here..."
+              aria-label="Todo"
+            />
+            <button id="add-btn" class="btn shadow-sm">
+              <span class="box">+</span>
+            </button>
+          </div>
+          <ul id="todo-list" class="mb-3"></ul>
+          <div class="status d-flex justify-content-between">
+            <p class="text-success">
+              Completed: <span id="completed-count">0</span>
+            </p>
+            <p class="text-secondary">
+              Total Tasks: <span id="total-count">0</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
