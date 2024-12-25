@@ -4,7 +4,7 @@ const todoList = document.getElementById("todo-list");
 const completedCount = document.getElementById("completed-count");
 const totalCount = document.getElementById("total-count");
 
-const BASE_URL = "http://localhost:8080/api/todos";
+const BASE_URL = "/api/todos";
 
 let todos = [];
 
@@ -71,8 +71,8 @@ function renderTodos() {
             <div class="flex">
             <div class="bullet"></div>
             <span class="${todo.completed ? "checked" : ""}" id="text-box">${
-              todo.text
-            }</span>
+      todo.text
+    }</span>
             </div>
             <div id="buttons">
             <button class="green btn1" onclick="toggleComplete('${
