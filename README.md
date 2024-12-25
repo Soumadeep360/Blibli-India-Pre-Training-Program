@@ -8,7 +8,6 @@ A simple and functional Todo application built with Java Spring Boot for the bac
 - Responsive and user-friendly interface.
 - RESTful APIs powered by Spring Boot.
 - MongoDB as the database for efficient data storage.
-- Deployed live at [https://todo-app-we8e.onrender.com/](https://todo-app-we8e.onrender.com/).
 
 ## Technologies Used
 
